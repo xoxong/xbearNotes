@@ -1,0 +1,54 @@
+page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  --purple: #4b1fd0
+}
+/* 隐藏滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
+/* 匹配iconfont字体文件 */
+[class*="icon"] {
+	font-family: "iconfont";
+	font-size: inherit;
+	font-style: normal;
+}
+
+.van-icon {
+  font: normal normal normal 14px/1 vant-icon !important;
+}
+
+
+
+/* button 样式重置 */
+button{
+  margin: 0;
+  padding: 0;
+  background-color:#ffffff;
+  line-height: inherit;
+  border-radius: 0;
+  border: none;
+  font-size: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-hover {
+  background-color: transparent;
+}
+
+button::after{
+  border: none;
+}
+
+input{
+  outline:none;
+  border:none;
+  list-style: none;
+}

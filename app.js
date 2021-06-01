@@ -41,6 +41,9 @@ App({
         return __awaiter(this, void 0, void 0, function () {
             var updateManager;
             return __generator(this, function (_a) {
+                wx.cloud.init({
+                    env: 'mibear-example-015131'
+                });
                 updateManager = wx.getUpdateManager();
                 if (updateManager) {
                     // 请求完新版本信息的回调

@@ -2,6 +2,9 @@ import * as _ from 'underscore'
 
 App({
   async onLaunch () {
+    wx.cloud.init({
+      env: 'mibear-example-015131'
+    })
     // 小程序更新提示用户重启
     const updateManager = wx.getUpdateManager()
     if (updateManager) {

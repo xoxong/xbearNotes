@@ -1,23 +1,41 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/home/index",
+    "pages/word/index"
   ],
   "usingComponents": {
+    "van-field": "@vant/weapp/field/index"
   },
   "subpackages": [
   ],
   "window": {
-    "navigationStyle": "custom",
-    "backgroundColor": "#F5F5F5",
     "backgroundTextStyle": "light",
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "小熊笔记",
     "navigationBarBackgroundColor": "#fff"
   },
   "permission": {
     "scope.userLocation": {
       "desc": "你的位置信息将用于小程序位置接口的效果展示"
     }
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#4b1fd0",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "text": "字典",
+        "iconPath": "images/tabs/dic2.png",
+        "selectedIconPath": "images/tabs/dic.png"
+      },
+      {
+        "pagePath": "pages/word/index",
+        "text": "背单词",
+        "iconPath": "images/tabs/word2.png",
+        "selectedIconPath": "images/tabs/word.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

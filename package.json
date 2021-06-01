@@ -21,6 +21,7 @@
   "dependencies": {
     "@vant/weapp": "^1.5.2",
     "moment": "^2.24.0",
+    "crypto-js": "^4.0.0",
     "underscore": "^1.9.2"
   },
   "devDependencies": {
