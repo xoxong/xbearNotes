@@ -1,0 +1,601 @@
+
+/* button点击时添加样式 hover-class="u-btnHover" */
+.u-btnHover {
+  background: #fff;
+}
+
+
+/* 默认按钮样式 */
+.u-btnCircle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16rpx 38rpx;
+  min-width: 188rpx;
+  color: #FFFFFF;
+  font-size: 26rpx;
+  background: var(--red);
+  border-radius: 50rpx;
+  box-sizing: border-box;
+}
+
+/* 默认填充为百分百 */
+.fill {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* 默认全屏白色 */
+.fillWhite {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+}
+
+/* 外部容器 */
+.wrapper {
+  padding: 0 30rpx 30rpx;
+  background: #fff;
+}
+
+.u-white {
+  color: white !important;
+}
+
+.u-bgWhite {
+  background: #fff !important;
+}
+
+.u-posRelative {
+  position: relative;
+}
+
+.u-widthFull {
+  width: 100%;
+}
+
+
+.u-heightFull {
+  height: 100%;
+}
+
+
+.u-sizeFull {
+  width: 100%;
+  height: 100%;
+}
+
+.u-height80 {
+  height: 80rpx;
+}
+
+.u-height100 {
+  height: 100rpx;
+}
+
+/* 常用内外边距 */
+
+.u-mt8 {
+  margin-top: 8rpx;
+}
+
+.u-mt10 {
+  margin-top: 10rpx;
+}
+
+.u-mt12 {
+  margin-top: 12rpx;
+}
+
+.u-mt14 {
+  margin-top: 14rpx;
+}
+
+.u-mt16 {
+  margin-top: 16rpx;
+}
+
+.u-mt20 {
+  margin-top: 20rpx;
+}
+
+.u-mt24 {
+  margin-top: 24rpx;
+}
+
+.u-mt28 {
+  margin-top: 28rpx;
+}
+
+.u-mt30 {
+  margin-top: 30rpx;
+}
+
+.u-mt32 {
+  margin-top: 32rpx;
+}
+
+.u-mt36 {
+  margin-top: 36rpx;
+}
+
+
+.u-mt40 {
+  margin-top: 40rpx;
+}
+
+.u-topRatio40 {
+  margin-top: 40%;
+}
+
+.u-mb10 {
+  margin-bottom: 10rpx;
+}
+
+.u-mb12 {
+  margin-bottom: 12rpx;
+}
+
+.u-mb16 {
+  margin-bottom: 16rpx;
+}
+
+.u-mb20 {
+  margin-bottom: 20rpx;
+}
+
+.u-mb24 {
+  margin-bottom: 24rpx;
+}
+
+.u-mb30 {
+  margin-bottom: 30rpx;
+}
+
+.u-mb40 {
+  margin-bottom: 40rpx;
+}
+
+.u-ml8 {
+  margin-left: 8rpx;
+}
+
+.u-ml20 {
+  margin-left: 20rpx;
+}
+
+.u-ml40 {
+  margin-left: 40rpx;
+}
+
+.u-mr4 {
+  margin-right: 4rpx;
+}
+
+.u-mr6 {
+  margin-right: 6rpx;
+}
+.u-mr8 {
+  margin-right: 8rpx;
+}
+.u-mr10 {
+  margin-right: 10rpx;
+}
+.u-mr16 {
+  margin-right: 16rpx;
+}
+.u-mr20 {
+  margin-right: 20rpx;
+}
+
+.u-mr40 {
+  margin-right: 40rpx;
+}
+
+.u-pb32 {
+  padding-bottom: 32rpx !important;
+}
+
+.u-insideSides32 {
+  padding: 0 32rpx;
+  box-sizing: border-box;
+}
+
+.u-textAlignRight {
+  text-align: right;
+}
+
+
+/* 常用flex布局属性 */
+
+.flex {
+  display: flex;
+}
+
+.u-flex {
+  display: flex;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.u-flex1 {
+  flex: 1;
+}
+
+
+.u-flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.u-flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.u-flexWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.u-flexAlignItemsCenter {
+  display: flex;
+  align-items: center;
+}
+
+.u-flexAlignItemsStart {
+  display: flex;
+  align-items: flex-start;
+}
+
+.u-flexAlignItemsEnd {
+  display: flex;
+  align-items: flex-end;
+}
+
+.u-flexJustifyCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.u-flexJustifyBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+.u-flexRowJustifyBetween {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.u-flexColJustifyCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.u-flexJustifyAround {
+  display: flex;
+  justify-content: space-around;
+}
+
+.u-flexJustifyEnd {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.u-flexJustifyEndAlignCenter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.u-flexJustifyCenterAlignEnd {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.u-flexJustifyStart {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.u-flexJustifyBetweenAlignCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.u-flexJustifyBetweenAlignStart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.u-flexJustifyBetweenAlignEnd {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.u-flexJustifyAroundAlignCenter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.u-flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.u-flexSelfEnd {
+  align-self: flex-end;
+}
+
+.u-inlineBlock {
+  display: inline-block !important;
+}
+
+/* 字体 */
+.u-fontBold {
+  font-weight: bold;
+}
+
+.u-fs18 {
+  font-size: 18rpx !important;
+}
+
+.u-fs20 {
+  font-size: 20rpx;
+}
+
+.u-fs22 {
+  font-size: 22rpx;
+}
+
+.u-fs24 {
+  font-size: 24rpx;
+}
+
+.u-fs26 {
+  font-size: 26rpx;
+}
+
+.u-fs28 {
+  font-size: 28rpx !important;
+}
+
+.u-fs30 {
+  font-size: 30rpx !important;
+}
+
+.u-fs32 {
+  font-size: 32rpx;
+}
+
+.u-fs34 {
+  font-size: 34rpx !important;
+}
+
+.u-fs36 {
+  font-size: 36rpx !important;
+}
+
+.u-fs38 {
+  font-size: 38rpx !important;
+}
+
+.u-fs40 {
+  font-size: 40rpx !important;
+}
+
+.u-fs44 {
+  font-size: 44rpx;
+}
+
+.u-fs48 {
+  font-size: 48rpx !important;
+}
+
+.u-fs52 {
+  font-size: 52rpx;
+}
+
+.u-fs60 {
+  font-size: 52rpx;
+}
+
+/* 行高 */
+.u-lh32 {
+  line-height: 32rpx;
+}
+
+.u-lh36 {
+  line-height: 36rpx;
+}
+
+.u-lh40 {
+  line-height: 40rpx;
+}
+
+/* 圆角 */
+.u-radiusRound {
+  border-radius: 5000rpx;
+}
+
+.ellipsis {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.u-ellipsis {
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 一行显示，溢出显示省略号 */
+.u-textTruncate1 {
+  display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
+}
+/* 两行显示, 一行显示，溢出显示省略号 */
+.u-textTruncate2 {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.u-textTruncate3 {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
+.u-textTruncate4 {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+}
+
+.u-textTruncate5 {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 5;
+	overflow: hidden;
+}
+
+/* 颜色 */
+.red {
+  color: var(--red) !important;
+}
+
+.u-cOrange {
+  color: rgba(244, 173, 89, 1) !important;
+}
+
+.u-cGray {
+  color: rgba(153, 153, 153, 1) !important;
+}
+
+.u-cWeChat {
+  color: rgba(65, 183, 6, 1) !important;
+}
+
+.u-c333 {
+  color: #333333 !important;
+}
+
+.u-c666 {
+  color: #666666 !important;
+}
+
+.u-c999 {
+  color: #999999 !important;
+}
+
+.u-c4d {
+  color: #4D4D4D !important;
+}
+
+/* 主色调 */
+.u-redMain {
+  color: var(--red) !important;
+}
+
+.u-redMainBorder {
+  color: var(--red) !important;
+  border-color: var(--red) !important;
+}
+
+.u-redMainBg {
+  background-color: var(--red) !important;
+}
+
+.u-redMainBbg {
+  border-color: var(--red) !important;
+  background-color: var(--red) !important;
+}
+
+
+/* 动画 */
+
+.u-animationFadeUp {
+  animation: animationFadeUp 0.5s;
+}
+
+
+.u-animationFadeDown {
+  animation: animationFadeDown 0.5s;
+}
+
+@keyframes animationFadeUp {
+  from {
+    opacity: 0.5;
+    transform: translateY(10rpx);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes animationFadeDown {
+  from {
+    opacity: 0.5;
+    transform: translateY(-10rpx);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 业务级别 */
+.u-footFixed {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+  box-shadow: 0 -1rpx 6rpx rgba(0, 0, 0, 0.1);
+}
+
+/* ios系统底部的操作条 */
+.u-iosEnv {
+  padding-bottom: calc(18rpx + env(safe-area-inset-bottom) / 3) !important;
+}
+
+.u-bgGray {
+  background-color: var(--gray) !important;
+}
+
+/* 默认提交按钮 */
+.u-fillSubmitBtn {
+  width: 100%;
+  height: 90rpx;
+  color: white;
+  font-size: 32rpx;
+  background: var(--red);
+  border-radius: 100rpx;
+  box-sizing: border-box;
+}
+
+/* 商城订单卡片外框 */
+.u-mallCell {
+  margin-bottom: 12rpx;
+  padding: 28rpx 32rpx;
+  background-color: white;
+}

@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "module": "CommonJS",
+    "target": "es5",
+    "allowJs": false,
+    "experimentalDecorators": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "alwaysStrict": true,
+    "sourceMap": false,
+    "inlineSourceMap": false,
+    "inlineSources": false,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "removeComments": false,
+    "pretty": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "strictPropertyInitialization": true,
+    "baseUrl": "./",
+    "paths": {
+      "@api/*": ["api/*"]
+    },
+    "lib": [
+      "es5",
+      "ES2015",
+      "ES2015.Promise"
+    ],
+    "typeRoots": [
+      "./node_modules/miniprogram-api-typings",
+      "./node_modules/@types",
+      "./custom-types"
+    ]
+  },
+  "include": [
+    "./**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

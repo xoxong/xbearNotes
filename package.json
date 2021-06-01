@@ -1,0 +1,45 @@
+{
+  "name": "xbearNotes",
+  "version": "0.0.1",
+  "description": "Holy shoot, you actually opened the readme. Good for you!",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "tsc -w",
+    "commit": "git add . & ./node_modules/cz-customizable/standalone.js",
+    "env:dev": "node ./bin/envSwitch.js dev",
+    "env:prod": "node ./bin/envSwitch.js prod",
+    "words": "node ./bin/words.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vant/weapp": "^1.5.2",
+    "moment": "^2.24.0",
+    "underscore": "^1.9.2"
+  },
+  "devDependencies": {
+    "@types/moment": "^2.13.0",
+    "@types/underscore": "^1.9.4",
+    "@typescript-eslint/eslint-plugin": "^3.6.1",
+    "@typescript-eslint/parser": "^3.6.1",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0",
+    "cz-customizable": "^6.2.1",
+    "miniprogram-api-typings": "^3.1.0",
+    "typescript": "^3.8.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.js"
+    }
+  }
+}

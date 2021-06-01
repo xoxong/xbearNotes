@@ -1,0 +1,9 @@
+<view class="page_wrapper">
+  <!-- 自定义顶部导航 -->
+  <component-topnav title="上哪学" isLeft="{{false}}"/>
+  <!-- 内容 -->
+</view>
+<!-- 开屏广告 -->
+<component-open-advert wx:if="{{isRendering}}"/>
+<!-- nps -->
+<component-nps id="nps"/>
