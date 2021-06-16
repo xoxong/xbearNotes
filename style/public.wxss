@@ -1,9 +1,11 @@
 page {
   display: flex;
   flex-direction: column;
+  padding: 32rpx;
   width: 100%;
   min-height: 100vh;
-  --purple: #4b1fd0
+  --purple: #4b1fd0;
+  box-sizing: border-box;
 }
 /* 隐藏滚动条 */
 ::-webkit-scrollbar {
@@ -51,4 +53,20 @@ input{
   outline:none;
   border:none;
   list-style: none;
+}
+
+.card__textarea .van-field__control {
+  height: 100% !important;
+  font-size: 28rpx !important;
+}
+
+.van-cell {
+  padding: 0 !important;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.van-field__body {
+  height: 100%;
+  font-size: 32rpx;
 }

@@ -1,0 +1,22 @@
+<view>
+  <view class="__list">
+    <view
+      class="__item"
+      wx:for="{{list}}"
+      wx:key="key">
+      <view
+        wx:if="{{curIndex !== index}}"
+        class="__card u-flexJBAC"
+        data-index="{{index}}"
+        data-item="{{item}}"
+        bindtap="handleitem">
+        <text>{{item._id}}</text>
+        <text>{{item.phonetic.us.str}}</text>
+      </view>
+      <word-card wx:if="{{curIndex === index}}" details="{{details}}"></word-card>
+    </view>
+    <view class="__slogin u-flex1" wx:if="{{isEnd}}">快去添加更多记忆吧～～～</view>
+  </view>
+  <van-loading wx:if="{{isMoreLoading}}" size="24px">加载中...</van-loading>
+  <!-- <word-card details="{{details}}"></word-card> -->
+</view>

@@ -1,0 +1,42 @@
+@import '/style/index.wxss';
+
+.card__card {
+  height: 120rpx;
+  overflow: hidden;
+}
+
+.is-unfold .card__card {
+  height: auto;
+  overflow: auto;
+}
+
+.__btn text {
+  padding: 10rpx 20rpx;
+  font-size: 24rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid gray;
+}
+
+.van-field__body {
+  padding: 5rpx 32rpx !important;
+}
+
+.__err {
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  padding: 10rpx 32rpx;
+  background-color: red;
+  color: white;
+  font-size: 24rpx;
+  text-align: center;
+}
+.__prev {
+  display: inline-block;
+  float: right;
+  margin-top: 32rpx;
+  padding: 10rpx 32rpx;
+  font-size: 32rpx;
+  color: white;
+  border-radius: 10rpx;
+  background-color: #339966;
+}

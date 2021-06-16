@@ -1,40 +1,29 @@
 import * as _ from 'underscore';
 import api from '../../api/index'
 const CryptoJS = require("crypto-js");
-
 const db = wx.cloud.database()
 const db_word = db.collection('word')
-
-// import cityJson from '../../word'
-
 
 Page({
   data:<any> {
     isZh: false,
     details: {},
     zhList: [],
-    value: 'mount',
-    lenovoValue: '',
-    isEdit: false
+    value: 'mount'
   },
   onLoad () {
     this.onSearch()
-    // this.handleAll()
   },
-  // handleAll () {
-  //   console.log(cityJson.length)
-  //   this.handleSearch(cityJson[1906], 1906)
-  // },
   handleItem (e: CEvent.datasetAny) {
     const value = e.currentTarget.dataset.item.replace(/[^a-zA-Z]/g,'')
     this.setData({ value })
     this.onSearch()
   },
   onChange (e: CEvent.datasetAny) {
-    this.setData({ value: e.detail })
+    this.setData({ value: e.detail.toLowerCase() })
   },
   onSearch: _.debounce(function (this: any) {
-    db_word.doc(this.data.value).get().then(res => {
+    api.word.details(this.data.value).then(res => {
       let details = res.data
       details.tags2 = details.tags.join('/')
       if (details) {
@@ -98,37 +87,8 @@ Page({
           data: db_data,
           success: function() {}, fail () {}
         })
-        // this.setData({ isZh: false, details })
         return
       }
-    })
-  },
-  truncate (q: string) {
-    var len = q.length;
-    if(len<=20) return q;
-    return q.substring(0, 10) + len + q.substring(len-10, len);
-  },
-  handleEdit () {
-    this.setData({ isEdit: true })
-  },
-  onLenovoChange (e: CEvent.datasetAny) {
-    this.setData({ lenovoValue: e.detail })
-  },
-  handleAdd () {
-    const v = this.data.lenovoValue.trim()
-    db_word.doc(this.data.details._id).update({
-      data: { memory: v }
-    }).then(() => {
-      this.setData({
-        isEdit: false,
-        'details.memory': v
-      })
-    })
-  },
-  handleEditMemory () {
-    this.setData({
-      isEdit: true,
-      lenovoValue: this.data.details.memory
     })
   },
   onPullDownRefresh () {

@@ -18,49 +18,5 @@
       data-item="{{item}}"
       bindtap="handleItem"><text>汉英</text>{{item}}</view>
   </view>
-  <view class="__card" wx:if="{{details.key}}">
-    <view class="u-fontBold u-fs48">{{details.key}}</view>
-    <view class="u-flexRow __phonetic">
-      <view class="u-flexCenter"><text class="u-fontBold">英</text>{{details.phonetic.uk.str}}</view>
-      <view class="u-flexCenter"><text class="u-fontBold">美 </text>{{details.phonetic.us.str}}</view>
-    </view>
-    <view class="__explains u-flexCol">
-      <view
-        class="__item--ex"
-        wx:for="{{details.explains}}"
-        wx:key="*this">
-        <text>{{item.t}}</text>
-        <text>{{item.n}}</text>
-      </view>
-    </view>
-    <view class="__tips">{{details.tags2}}</view>
-    <view class="__lenovo u-flex">
-      <van-button
-        class="__btn"
-        wx:if="{{!details.memory && !isEdit}}"
-        round
-        type="info"
-        bindtap="handleEdit">记忆联系</van-button>
-      <van-field
-        class="__textarea"
-        wx:if="{{isEdit}}"
-        type="textarea"
-        value="{{ lenovoValue }}"
-        placeholder="请输入记忆联想句子"
-        border="{{ false }}"
-        bind:change="onLenovoChange"
-      />
-      <text wx:if="{{details.memory && !isEdit}}">{{details.memory}}</text>
-    </view>
-    <view
-      wx:if="{{isEdit}}"
-      class="__btn-add"
-      bindtap="handleAdd"
-      >保存记忆</view>
-    <view
-      wx:if="{{details.memory && !isEdit}}"
-      class="__btn-edit"
-      bindtap="handleEditMemory"
-      >编辑记忆</view>
-  </view>
+  <word-card details="{{details}}"></word-card>
 </view>

@@ -1,0 +1,8 @@
+@import '/style/index.wxss';
+
+.__btn text {
+  padding: 10rpx 20rpx;
+  font-size: 24rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid gray;
+}

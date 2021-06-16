@@ -1,0 +1,47 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/word/index",
+          "pathName": "pages/word/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pagesMain/pages/random/index",
+          "pathName": "pagesMain/pages/random/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pagesMain/pages/review/index",
+          "pathName": "pagesMain/pages/review/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pagesMain/pages/exercise/index",
+          "pathName": "pagesMain/pages/exercise/index",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

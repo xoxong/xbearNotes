@@ -1,8 +1,7 @@
-// 还未分类的接口
 import request from '../utils/request'
 
 /**
- * 文章详情
+ * 翻译接口
  */
 const fanyi = (params: any) => {
   return request.get('https://openapi.youdao.com/api', params)

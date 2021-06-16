@@ -16,35 +16,27 @@ var index_1 = require("../../api/index");
 var CryptoJS = require("crypto-js");
 var db = wx.cloud.database();
 var db_word = db.collection('word');
-// import cityJson from '../../word'
 Page({
     data: {
         isZh: false,
         details: {},
         zhList: [],
-        value: 'mount',
-        lenovoValue: '',
-        isEdit: false
+        value: 'mount'
     },
     onLoad: function () {
         this.onSearch();
-        // this.handleAll()
     },
-    // handleAll () {
-    //   console.log(cityJson.length)
-    //   this.handleSearch(cityJson[1906], 1906)
-    // },
     handleItem: function (e) {
         var value = e.currentTarget.dataset.item.replace(/[^a-zA-Z]/g, '');
         this.setData({ value: value });
         this.onSearch();
     },
     onChange: function (e) {
-        this.setData({ value: e.detail });
+        this.setData({ value: e.detail.toLowerCase() });
     },
     onSearch: _.debounce(function () {
         var _this = this;
-        db_word.doc(this.data.value).get().then(function (res) {
+        index_1.default.word.details(this.data.value).then(function (res) {
             var details = res.data;
             details.tags2 = details.tags.join('/');
             if (details) {
@@ -110,39 +102,8 @@ Page({
                     success: function () { },
                     fail: function () { }
                 });
-                // this.setData({ isZh: false, details })
                 return;
             }
-        });
-    },
-    truncate: function (q) {
-        var len = q.length;
-        if (len <= 20)
-            return q;
-        return q.substring(0, 10) + len + q.substring(len - 10, len);
-    },
-    handleEdit: function () {
-        this.setData({ isEdit: true });
-    },
-    onLenovoChange: function (e) {
-        this.setData({ lenovoValue: e.detail });
-    },
-    handleAdd: function () {
-        var _this = this;
-        var v = this.data.lenovoValue.trim();
-        db_word.doc(this.data.details._id).update({
-            data: { memory: v }
-        }).then(function () {
-            _this.setData({
-                isEdit: false,
-                'details.memory': v
-            });
-        });
-    },
-    handleEditMemory: function () {
-        this.setData({
-            isEdit: true,
-            lenovoValue: this.data.details.memory
         });
     },
     onPullDownRefresh: function () {

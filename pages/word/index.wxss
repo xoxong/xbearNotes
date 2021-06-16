@@ -1,0 +1,37 @@
+
+
+.__item {
+  position: relative;
+  padding: 32rpx 32rpx;
+  margin-bottom: 32rpx;
+  font-size: 34rpx;
+  border: 1rpx solid gray;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+}
+
+.__item text:nth-of-type(1) {
+  margin-right: 20rpx;
+}
+
+.__num {
+  position: absolute;
+  right: 32rpx;
+  font-size: 24rpx;
+  color: #BBBBBB;
+}
+
+.icon-suiji {
+  font-size: 34rpx !important;
+  color: #339999;
+}
+
+.icon-yaofuxix {
+  font-size: 32rpx !important;
+  color: #FF9900;
+}
+
+.icon-lianxi {
+  font-size: 38rpx !important;
+  color: var(--purple);
+}

@@ -4,7 +4,9 @@
     "pages/word/index"
   ],
   "usingComponents": {
-    "van-field": "@vant/weapp/field/index"
+    "word-card": "./components/word-card/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-loading": "@vant/weapp/loading/index"
   },
   "subpackages": [
   ],
@@ -37,5 +39,15 @@
       }
     ]
   },
+  "subpackages": [
+    {
+      "root": "pagesMain",
+      "pages": [
+        "pages/random/index",
+        "pages/review/index",
+        "pages/exercise/index"
+      ]
+    }
+  ],
   "sitemapLocation": "sitemap.json"
 }

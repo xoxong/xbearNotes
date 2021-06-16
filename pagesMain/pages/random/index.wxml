@@ -1,0 +1,7 @@
+<view>
+  <word-card details="{{details}}"></word-card>
+  <view class="u-flexJA u-flex1 __btn">
+    <text wx:if="{{index > 0}}" bindtap="handlePrev">上一个</text>
+    <text bindtap="handleNext">下一个</text>
+  </view>
+</view>

@@ -103,6 +103,10 @@
   margin-top: 24rpx;
 }
 
+.u-mt26 {
+  margin-top: 26rpx;
+}
+
 .u-mt28 {
   margin-top: 28rpx;
 }
@@ -238,97 +242,105 @@
 .u-flexWrap {
   display: flex;
   flex-wrap: wrap;
+  word-break: break-word;
 }
-.u-flexAlignItemsCenter {
+
+.u-flexWrapAll {
+  display: flex;
+  flex-wrap: wrap;
+  word-break: break-word;
+}
+
+.u-flexAIC {
   display: flex;
   align-items: center;
 }
 
-.u-flexAlignItemsStart {
+.u-flexAIS {
   display: flex;
   align-items: flex-start;
 }
 
-.u-flexAlignItemsEnd {
+.u-flexAIE {
   display: flex;
   align-items: flex-end;
 }
 
-.u-flexJustifyCenter {
+.u-flexJC {
   display: flex;
   justify-content: center;
 }
 
-.u-flexJustifyBetween {
+.u-flexJB {
   display: flex;
   justify-content: space-between;
 }
 
-.u-flexRowJustifyBetween {
+.u-flexRowJB {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.u-flexColJustifyCenter {
+.u-flexColJC {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.u-flexJustifyAround {
+.u-flexJA {
   display: flex;
   justify-content: space-around;
 }
 
-.u-flexJustifyEnd {
+.u-flexJE {
   display: flex;
   justify-content: flex-end;
 }
 
-.u-flexJustifyEndAlignCenter {
+.u-flexJEAC {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.u-flexJustifyCenterAlignEnd {
+.u-flexJCAE {
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 
-.u-flexJustifyStart {
+.u-flexJS {
   display: flex;
   justify-content: flex-start;
 }
 
-.u-flexJustifyBetweenAlignCenter {
+.u-flexJBAC {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 
-.u-flexJustifyBetweenAlignStart {
+.u-flexJBAS {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.u-flexJustifyBetweenAlignEnd {
+.u-flexJBAE {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.u-flexJustifyAroundAlignCenter {
+.u-flexJAAC {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.u-flexCenter {
+.u-flexC {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -360,11 +372,11 @@
 }
 
 .u-fs24 {
-  font-size: 24rpx;
+  font-size: 24rpx !important;
 }
 
 .u-fs26 {
-  font-size: 26rpx;
+  font-size: 26rpx !important;
 }
 
 .u-fs28 {
@@ -376,7 +388,7 @@
 }
 
 .u-fs32 {
-  font-size: 32rpx;
+  font-size: 32rpx !important;
 }
 
 .u-fs34 {
@@ -429,11 +441,8 @@
   border-radius: 5000rpx;
 }
 
-.ellipsis {
-  min-width: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.u-wbba {
+  word-break: break-all;
 }
 
 .u-ellipsis {
@@ -482,16 +491,16 @@
   color: var(--red) !important;
 }
 
-.u-cOrange {
-  color: rgba(244, 173, 89, 1) !important;
+.u-normYellow {
+  color: #FF9B17 !important;
 }
 
 .u-cGray {
   color: rgba(153, 153, 153, 1) !important;
 }
 
-.u-cWeChat {
-  color: rgba(65, 183, 6, 1) !important;
+.u-normGreen {
+  color: #28C588 !important;
 }
 
 .u-c333 {

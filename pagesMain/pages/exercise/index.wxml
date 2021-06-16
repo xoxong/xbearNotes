@@ -1,0 +1,23 @@
+<view>
+  <word-card class="{{isUnfold ? 'is-unfold' : ''}}" details="{{details}}"></word-card>
+  <van-field
+    wx:if="{{!isUnfold}}"
+    class="__chinese"
+    value="{{chinese}}"
+    placeholder="请输入中文翻译"
+    border="{{false}}"
+    bind:change="onChange"
+  />
+  <view class="__err" wx:if="{{isError}}">{{errorMsg}}</view>
+  <view
+    class="__prev"
+    wx:if="{{chinese && isOk}}"
+    bindtap="handlePrev">下一个</view>
+  <view
+    class="__prev"
+    wx:if="{{isError}}"
+    bindtap="handleOpen">记忆</view>
+  <!-- <view class="u-flexJA u-flex1 __btn">
+    <text wx:if="{{index > 0}}" bindtap="handlePrev">上一个</text>
+  </view> -->
+</view>
