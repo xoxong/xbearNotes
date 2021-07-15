@@ -7,7 +7,7 @@ const db_word = db.collection('word')
  * 总单词长度
  * @param type plan 陌生词长度
  */
-const count = (type: string) => {
+const count = (type?: string) => {
   if (type === 'plan') return db_word.where({
     memory: w.and(w.exists(false))
   }).count()

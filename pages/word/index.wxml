@@ -1,21 +1,21 @@
 <view>
-  <view class="__list">
-    <view class="__item u-flexAIC" bindtap="jumpRandom">
+  <view class="__list u-flexWrapAll u-flexRow">
+    <view class="__item u-flexCol u-flexC" bindtap="jumpRandom">
       <text class="icon-suiji"></text>
       <text>随机背单词</text>
       <text class="__num">{{allTotal}}</text>
     </view>
-    <view class="__item u-flexAIC" bindtap="jumpPlan">
-      <text class="icon-suiji" style="color: #333333"></text>
+    <view class="__item u-flexCol u-flexC" bindtap="jumpPlan">
+      <text class="icon-suiji"></text>
       <text>生词记忆</text>
       <text class="__num">{{pllTotal}}</text>
     </view>
-    <view class="__item u-flexAIC" bindtap="jumpReview">
+    <view class="__item u-flexCol u-flexC" bindtap="jumpReview">
       <text class="icon-yaofuxix"></text>
       <text>复习单词</text>
       <text class="__num">{{mTotal}}</text>
     </view>
-     <view class="__item u-flexAIC" bindtap="jumpExercise">
+     <view class="__item u-flexCol u-flexC" bindtap="jumpExercise">
       <text class="icon-lianxi"></text>
       <text>练习题</text>
       <text class="__num">{{mTotal}}</text>

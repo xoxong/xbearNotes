@@ -18,6 +18,7 @@ var db = wx.cloud.database();
 var db_word = db.collection('word');
 Page({
     data: {
+        isClose: false,
         isZh: false,
         details: {},
         zhList: [],
@@ -32,7 +33,10 @@ Page({
         this.onSearch();
     },
     onChange: function (e) {
-        this.setData({ value: e.detail.toLowerCase() });
+        this.setData({
+            value: e.detail.toLowerCase(),
+            isClose: e.detail.toLowerCase().length > 0
+        });
     },
     onSearch: _.debounce(function () {
         var _this = this;
@@ -104,6 +108,12 @@ Page({
                 });
                 return;
             }
+        });
+    },
+    handleClose: function () {
+        this.setData({
+            value: '',
+            isClose: false
         });
     },
     onPullDownRefresh: function () {

@@ -27,7 +27,7 @@
     "list": [
       {
         "pagePath": "pages/home/index",
-        "text": "字典",
+        "text": "学习",
         "iconPath": "images/tabs/dic2.png",
         "selectedIconPath": "images/tabs/dic.png"
       },

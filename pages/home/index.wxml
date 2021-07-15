@@ -5,8 +5,13 @@
       placeholder="搜索单词"
       border="{{ false }}"
       bind:change="onChange"
-      clearable
+      bind:confirm="onSearch"
       use-button-slot>
+      <text
+        wx:if="{{isClose}}"
+        slot="right-icon"
+        class="icon-12pt_guanbi"
+        bindtap="handleClose"></text>
       <van-button slot="button" size="small" type="primary" bindtap="onSearch">搜索</van-button>
     </van-field>
   </view>

@@ -1,37 +1,45 @@
-
+page {
+  padding-right: 0 !important;
+}
 
 .__item {
   position: relative;
+  width: 45%;
+  height: 300rpx;
   padding: 32rpx 32rpx;
   margin-bottom: 32rpx;
+  margin-right: 32rpx;
   font-size: 34rpx;
-  border: 1rpx solid gray;
+  color: white;
   box-sizing: border-box;
   border-radius: 10rpx;
 }
 
+.__item:nth-child(1) {
+  background-color: #339999;
+}
+
+.__item:nth-child(2) {
+  background-color: #333333;
+}
+
+.__item:nth-child(3) {
+  background-color: #99CCCC;
+}
+
+.__item:nth-child(4) {
+  background-color: #0099CC;
+}
+
+
 .__item text:nth-of-type(1) {
-  margin-right: 20rpx;
+  margin-bottom: 10rpx;
+  font-size: 40rpx;
+  color: white;
 }
 
 .__num {
-  position: absolute;
-  right: 32rpx;
-  font-size: 24rpx;
-  color: #BBBBBB;
-}
-
-.icon-suiji {
-  font-size: 34rpx !important;
-  color: #339999;
-}
-
-.icon-yaofuxix {
-  font-size: 32rpx !important;
-  color: #FF9900;
-}
-
-.icon-lianxi {
-  font-size: 38rpx !important;
-  color: var(--purple);
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  color: white;
 }

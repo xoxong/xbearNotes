@@ -6,6 +6,7 @@ const db_word = db.collection('word')
 
 Page({
   data:<any> {
+    isClose: false,
     isZh: false,
     details: {},
     zhList: [],
@@ -20,7 +21,10 @@ Page({
     this.onSearch()
   },
   onChange (e: CEvent.datasetAny) {
-    this.setData({ value: e.detail.toLowerCase() })
+    this.setData({
+      value: e.detail.toLowerCase(),
+      isClose: e.detail.toLowerCase().length > 0
+    })
   },
   onSearch: _.debounce(function (this: any) {
     api.word.details(this.data.value).then(res => {
@@ -89,6 +93,12 @@ Page({
         })
         return
       }
+    })
+  },
+  handleClose () {
+    this.setData({
+      value: '',
+      isClose: false
     })
   },
   onPullDownRefresh () {
